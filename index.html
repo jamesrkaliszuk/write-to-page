@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Parameter Test</title>
+    <link href="./css/style.css" rel="stylesheet" />
+    <script defer src="./js/param.js"></script>
+  </head>
+  <body>
+    <div class="heading">
+      <h1>Creating A Simple Write To Page</h1>
+      <h2>Write a message</h2>
+    </div>
+    <form class="wrapper">
+      <input type="text" id="title" placeholder="Title" />
+      <textarea id="text" name="text" placeholder="Message"></textarea>
+      <div class="buttons">
+        <button type="button" id="btn" class="subBtn" onclick="alertParam()">
+          Submit
+        </button>
+        <button type="reset" id="reset" class="resetBtn">Reset</button>
+      </div>
+    </form>
+
+    <div id="message" class="message hidden">
+      <div id="blogTitle" class="blogTitle"></div>
+      <div id="blogPost" class="blogPost"></div>
+    </div>
+
+    <footer>Developed By: Jim &nbsp; <span id="date"><span></footer>
+  </body>
+</html>

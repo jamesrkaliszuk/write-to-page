@@ -1,0 +1,134 @@
+@import url('https://fonts.googleapis.com/css2?family=Arimo:wght@600&family=Fira+Sans:wght@300&display=swap');
+
+:root {
+    --font1: Arimo, sans-serif;
+    --font2: Fira Sans, sans-serif;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+h1, h2 {
+    font-family: var(--font1);
+    text-align: center;
+}
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    margin: 100px;
+}
+
+.heading {
+    background: rgba(177, 177, 177, 0.515);
+    padding: 30px;
+}
+
+.wrapper textarea {
+    padding: 5px;
+    text-align: center;
+    min-width: 400px;
+    min-height: 100px;
+    font-family: var(--font2);
+}
+
+.wrapper textarea:focus {
+    outline-width: 1px;
+    outline-color: rgb(220, 220, 245);
+    color: rgb(163, 209, 249);
+}
+
+.wrapper input {
+    padding: 5px;
+    font-family: var(--font1);
+    text-align: center;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.wrapper input:focus {
+    outline-width: 1px;
+    outline-color: rgb(220, 220, 245);
+    color: rgb(163, 209, 249);
+}
+
+.wrapper button {
+    cursor: pointer;
+    padding: 5px;
+    width: 75px;
+}
+
+.message {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: 30px;
+    margin: 20px auto;
+    font-family: var(--font2);
+    border: 1px solid black;
+    border-radius: 5px;
+    padding: 15px;
+    background: rgba(0, 0, 0, 0.273);
+    max-width: 550px;
+    min-height: 200px;
+}
+
+.blogTitle {
+    font-weight: bold;
+    font-size: 2rem;
+    text-decoration: underline;
+    text-transform: uppercase;
+}
+
+.blogPost {
+    font-style: italic;
+}
+
+.hidden {
+    opacity: 0;
+    transition: all 500ms ease-out;
+}
+
+.show {
+    opacity: 1;
+    transition: all 500ms ease-in;
+}
+
+.subBtn {
+    background: rgba(111, 111, 111, 0.5);
+    border: 1px solid black;
+    font-family: var(--font2);
+    transition: all 300ms ease-in;
+}
+
+.subBtn:hover {
+    background: rgba(117, 235, 71, 0.2);
+}
+
+.resetBtn {
+    background: rgba(111, 111, 111, 0.5);
+    border: 1px solid black;
+    font-family: var(--font2);
+    transition: all 300ms ease-in;
+}
+
+.resetBtn:hover {
+    background: rgba(235, 71, 71, 0.2);
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    font-family: var(--font1);
+    height: 15vh;
+    padding: 15px;
+    margin-top: 50px;
+}
